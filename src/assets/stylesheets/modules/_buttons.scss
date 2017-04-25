@@ -1,0 +1,78 @@
+.button--primary {
+  @include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.47));
+  @include rem(17);
+  color: $color-brand;
+  background-color: $white;
+  border-radius: $btn-border-radius;
+  font-weight: 700;
+  &:hover {
+    @include box-shadow(0 1px 1px 0 rgba(255, 242, 242, 0.15));
+    background-color: $dark-indigo;
+    color: rgba($cream, 0.65);
+  }
+  &:focus {
+    color: $color-brand;
+  }
+}
+
+.button--secondary {
+  color: $white;
+  background-color: $color-brand;
+  border-radius: $btn-border-radius;
+  border: solid 2px $color-brand;
+  font-weight: 700;
+  padding: $half-spacing-unit $half-spacing-unit;
+  line-height: 24px;
+  &:hover {
+    background-color: $white;
+    color: $color-brand;
+    @include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.47));
+  }
+}
+
+.button--bordered {
+  @include rem(17);
+  color: $white;
+  border-radius: $btn-border-radius;
+  border: solid 2px rgba( #FFF, 0.6);
+  font-weight: 700;
+  padding: $half-spacing-unit $half-spacing-unit;
+  line-height: 24px;
+  &:hover {
+    background-color: $white;
+    color: $color-brand;
+    @include box-shadow(0 1px 1px 0 rgba(0, 0, 0, 0.47));
+  }
+}
+
+.button--auth {
+  width: 70%;
+  display: block;
+  margin: 0 auto $half-spacing-unit;
+  color: #fff;
+  text-align: left;
+  padding: 0.625em;
+  border-radius: 4px;
+  box-shadow: 1px 1px 0 0 rgba(0,0,0,0.25);
+}
+
+.button--fb {
+  background-color: $fb-color;
+}
+
+.button--google {
+  background-color: $google-color;
+}
+
+.button__icon {
+  @include rem(18);
+  display: inline-block;
+  vertical-align: middle;
+  @include rem(15, 'margin-right');
+}
+.button__text {
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
